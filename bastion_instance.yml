@@ -31,6 +31,8 @@
           to_port: 22
           cidr_id: "{{MYIP}}"
       register: BastionSG_out
+    - debug:
+        var: BastionSG_out
     - name: Creating Bastion host
       ec2:
        key_name: vprofile-key
