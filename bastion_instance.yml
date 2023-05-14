@@ -30,7 +30,7 @@
         - proto: tcp
           from_port: 22
           to_port: 22
-          cidr_id: "{{MYIP}}"
+          cidr_id: 49.204.209.185/32
       register: BastionSG_out
     - debug:
         var: BastionSG_out
