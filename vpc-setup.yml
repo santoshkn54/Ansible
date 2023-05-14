@@ -65,8 +65,8 @@
               Name: vprofile-privsub1
       register: privsub1out
 
-        - name: create private subnet 2 in zone2
-          ec2_vpc_subnet:
+    - name: create private subnet 2 in zone2
+      ec2_vpc_subnet:
                vpc_id: "{{vpcout.vpc.id}}"
                region: "{{region}}"
                az: "{{zone2}}"
@@ -75,9 +75,9 @@
                map_public: yes
                resource_tags:
                  Name: vprofile-privsub2
-          register: privsub2out
-        - name: create private subnet 3 in zone3
-          ec2_vpc_subnet:
+      register: privsub2out
+    - name: create private subnet 3 in zone3
+      ec2_vpc_subnet:
                vpc_id: "{{vpcout.vpc.id}}"
                region: "{{region}}"
                az: "{{zone3}}"
@@ -86,4 +86,4 @@
                map_public: yes
                resource_tags:
                  Name: vprofile-privsub3
-          register: privsub3out
+      register: privsub3out
