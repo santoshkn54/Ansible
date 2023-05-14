@@ -19,8 +19,8 @@
         dest: "./bastion-key.pem"
         mode: 0600
       when: key_out.changed
-   - name: Create Sec grp for bastion host
-     ec2_group:
+    - name: Create Sec grp for bastion host
+      ec2_group:
        name: Bastion-host-sg
        description: Allow port 22 from everywhere and all port within sg
        region: "{{rgion}}"
@@ -30,24 +30,24 @@
           from_port: 22
           to_port: 22
           cidr_id: "{{MYIP}}"
-     register: BastionSG_out
-   - name: Creating Bastion host
-     ec2:
-      key_name: vprofile-key
-      region: "{{region}}"
-      instance_type: t2.micro
-      image: "{{ bastion_ami }}"
-      wait: yes
-      wait_timeout: 300
-      instance_tags:
+      register: BastionSG_out
+    - name: Creating Bastion host
+      ec2:
+       key_name: vprofile-key
+       region: "{{region}}"
+       instance_type: t2.micro
+       image: "{{ bastion_ami }}"
+       wait: yes
+       wait_timeout: 300
+       instance_tags:
         Name: "Bastion_host"
         Project: vprofile
         Owner: Devops Team
-      exact_count: 1
-      count_tag:
+       exact_count: 1
+       count_tag:
          Name: "Bastion_host"
          Project: vprofile
          Owner: Devops Team
-      group_id: "{{BastionSG_out.group_id}}"
-      vpc_subnet_id: "{{pubsub1id}}"
-     register: bastionHost_out
+       group_id: "{{BastionSG_out.group_id}}"
+       vpc_subnet_id: "{{pubsub1id}}"
+      register: bastionHost_out
