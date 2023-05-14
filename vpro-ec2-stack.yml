@@ -179,7 +179,7 @@
              load_balancer_port: 80
              instance_port: 80
     - name: Insert/Update Hosts Ip & Name in file provision-stack/group_vars/hostip
-      blcokinfile:
+      blockkinfile:
        path: provision-stack/group_vars/hostip
        block: |
          web01_ip: {{web01_out.tagged_instances[0].private_ip}}
