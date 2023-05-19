@@ -214,3 +214,231 @@ stack/inventory_vpro:8: Expected key=value host variable assignment, got: ansibl
     "msg": "Failed to connect to the host via ssh: root@172.20.4.140: Permission denied (publickey).", 
     "unreachable": true
 }
+2023-05-19 13:53:18,137 p=2844 u=root n=ansible | [WARNING]:  * Failed to parse /root/Ansible/provision-stack/inventory-vpro with yaml plugin: We were unable to read
+either as JSON nor YAML, these are the errors we got from each: JSON: No JSON object could be decoded  Syntax Error
+while loading YAML.   mapping values are not allowed in this context  The error appears to be in '/root/Ansible
+/provision-stack/inventory-vpro': line 7, column 18, but may be elsewhere in the file depending on the exact syntax
+problem.  The offending line appears to be:  db01 ansible_host=172.20.4.140                  ^ here  There appears to
+be both 'k=v' shorthand syntax and YAML in this task. Only one syntax may be used.
+
+2023-05-19 13:53:18,137 p=2844 u=root n=ansible | [WARNING]:  * Failed to parse /root/Ansible/provision-stack/inventory-vpro with ini plugin: /root/Ansible/provision-
+stack/inventory-vpro:8: Expected key=value host variable assignment, got: ansible_host:
+
+2023-05-19 13:53:18,138 p=2844 u=root n=ansible | [WARNING]: Unable to parse /root/Ansible/provision-stack/inventory-vpro as an inventory source
+
+2023-05-19 13:53:18,138 p=2844 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-05-19 13:53:19,594 p=2844 u=root n=ansible | web01 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: root@172.20.4.179: Permission denied (publickey).", 
+    "unreachable": true
+}
+2023-05-19 13:53:19,612 p=2844 u=root n=ansible | app01 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: root@172.20.4.236: Permission denied (publickey).", 
+    "unreachable": true
+}
+2023-05-19 13:53:19,635 p=2844 u=root n=ansible | rmq01 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: root@172.20.4.91: Permission denied (publickey).", 
+    "unreachable": true
+}
+2023-05-19 13:53:19,662 p=2844 u=root n=ansible | mc01 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: root@172.20.4.241: Permission denied (publickey).", 
+    "unreachable": true
+}
+2023-05-19 13:53:19,665 p=2844 u=root n=ansible | db01 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: root@172.20.4.140: Permission denied (publickey).", 
+    "unreachable": true
+}
+2023-05-19 13:56:35,117 p=2909 u=root n=ansible | [WARNING]:  * Failed to parse /root/Ansible/provision-stack/inventory-vpro with yaml plugin: We were unable to read
+either as JSON nor YAML, these are the errors we got from each: JSON: No JSON object could be decoded  Syntax Error
+while loading YAML.   mapping values are not allowed in this context  The error appears to be in '/root/Ansible
+/provision-stack/inventory-vpro': line 7, column 18, but may be elsewhere in the file depending on the exact syntax
+problem.  The offending line appears to be:  db01 ansible_host=172.20.4.140                  ^ here  There appears to
+be both 'k=v' shorthand syntax and YAML in this task. Only one syntax may be used.
+
+2023-05-19 13:56:35,117 p=2909 u=root n=ansible | [WARNING]:  * Failed to parse /root/Ansible/provision-stack/inventory-vpro with ini plugin: /root/Ansible/provision-
+stack/inventory-vpro:8: Expected key=value host variable assignment, got: ansible_host:
+
+2023-05-19 13:56:35,117 p=2909 u=root n=ansible | [WARNING]: Unable to parse /root/Ansible/provision-stack/inventory-vpro as an inventory source
+
+2023-05-19 13:56:35,118 p=2909 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-05-19 13:56:37,538 p=2909 u=root n=ansible | rmq01 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2023-05-19 13:56:37,626 p=2909 u=root n=ansible | app01 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2023-05-19 13:56:37,654 p=2909 u=root n=ansible | mc01 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2023-05-19 13:56:37,830 p=2909 u=root n=ansible | web01 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2023-05-19 13:56:37,941 p=2909 u=root n=ansible | db01 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2023-05-19 14:09:23,155 p=3024 u=root n=ansible | [WARNING]:  * Failed to parse /root/Ansible/provision-stack/inventory-vpro with yaml plugin: We were unable to read
+either as JSON nor YAML, these are the errors we got from each: JSON: No JSON object could be decoded  Syntax Error
+while loading YAML.   mapping values are not allowed in this context  The error appears to be in '/root/Ansible
+/provision-stack/inventory-vpro': line 7, column 18, but may be elsewhere in the file depending on the exact syntax
+problem.  The offending line appears to be:  db01 ansible_host=172.20.4.140                  ^ here  There appears to
+be both 'k=v' shorthand syntax and YAML in this task. Only one syntax may be used.
+
+2023-05-19 14:09:23,156 p=3024 u=root n=ansible | [WARNING]:  * Failed to parse /root/Ansible/provision-stack/inventory-vpro with ini plugin: /root/Ansible/provision-
+stack/inventory-vpro:8: Expected key=value host variable assignment, got: ansible_host:
+
+2023-05-19 14:09:23,156 p=3024 u=root n=ansible | [WARNING]: Unable to parse /root/Ansible/provision-stack/inventory-vpro as an inventory source
+
+2023-05-19 14:09:23,156 p=3024 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-05-19 14:09:23,438 p=3024 u=root n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ************************************************
+2023-05-19 14:09:23,450 p=3024 u=root n=ansible | TASK [Gathering Facts] ***********************************************************************************************
+2023-05-19 14:09:24,568 p=3024 u=root n=ansible | ok: [localhost]
+2023-05-19 14:09:24,578 p=3024 u=root n=ansible | TASK [Install jdk, mven, git] ****************************************************************************************
+2023-05-19 14:10:05,084 p=3024 u=root n=ansible | ok: [localhost] => (item=git)
+2023-05-19 14:11:04,096 p=3024 u=root n=ansible | changed: [localhost] => (item=openjdk-8-jdk)
+2023-05-19 14:11:14,696 p=3024 u=root n=ansible | changed: [localhost] => (item=maven)
+2023-05-19 14:11:14,714 p=3024 u=root n=ansible | [WARNING]: Updating cache and auto-installing missing dependency: python-apt
+
+2023-05-19 14:11:14,724 p=3024 u=root n=ansible | TASK [Clone source code from github] *********************************************************************************
+2023-05-19 14:11:18,932 p=3024 u=root n=ansible | changed: [localhost]
+2023-05-19 14:11:18,945 p=3024 u=root n=ansible | TASK [mvn install command to build artifact] *************************************************************************
+2023-05-19 14:11:55,998 p=3024 u=root n=ansible | changed: [localhost]
+2023-05-19 14:11:56,085 p=3024 u=root n=ansible | TASK [Copy artifacts to files directory] *****************************************************************************
+2023-05-19 14:11:57,405 p=3024 u=root n=ansible | changed: [localhost] => (item=/root/Ansible/provision-stack/Vprofile-repo/target/vprofile-v2.war)
+2023-05-19 14:11:57,421 p=3024 u=root n=ansible | TASK [Copy Sql file to files directory] ******************************************************************************
+2023-05-19 14:11:57,689 p=3024 u=root n=ansible | changed: [localhost]
+2023-05-19 14:11:57,693 p=3024 u=root n=ansible | PLAY RECAP ***********************************************************************************************************
+2023-05-19 14:11:57,693 p=3024 u=root n=ansible | localhost                  : ok=6    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-19 14:19:19,557 p=11525 u=root n=ansible | [WARNING]:  * Failed to parse /root/Ansible/provision-stack/inventory-vpro with yaml plugin: We were unable to read
+either as JSON nor YAML, these are the errors we got from each: JSON: No JSON object could be decoded  Syntax Error
+while loading YAML.   mapping values are not allowed in this context  The error appears to be in '/root/Ansible
+/provision-stack/inventory-vpro': line 7, column 18, but may be elsewhere in the file depending on the exact syntax
+problem.  The offending line appears to be:  db01 ansible_host=172.20.4.140                  ^ here  There appears to
+be both 'k=v' shorthand syntax and YAML in this task. Only one syntax may be used.
+
+2023-05-19 14:19:19,558 p=11525 u=root n=ansible | [WARNING]:  * Failed to parse /root/Ansible/provision-stack/inventory-vpro with ini plugin: /root/Ansible/provision-
+stack/inventory-vpro:8: Expected key=value host variable assignment, got: ansible_host:
+
+2023-05-19 14:19:19,558 p=11525 u=root n=ansible | [WARNING]: Unable to parse /root/Ansible/provision-stack/inventory-vpro as an inventory source
+
+2023-05-19 14:19:19,558 p=11525 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-05-19 14:19:20,098 p=11525 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: No JSON object could be decoded
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/root/Ansible/provision-stack/set_hostip.yml': line 9, column 16, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+        path: /etc/hosts
+          block: |
+               ^ here
+
+2023-05-19 14:22:00,801 p=11547 u=root n=ansible | [WARNING]:  * Failed to parse /root/Ansible/provision-stack/inventory-vpro with yaml plugin: We were unable to read
+either as JSON nor YAML, these are the errors we got from each: JSON: No JSON object could be decoded  Syntax Error
+while loading YAML.   mapping values are not allowed in this context  The error appears to be in '/root/Ansible
+/provision-stack/inventory-vpro': line 7, column 18, but may be elsewhere in the file depending on the exact syntax
+problem.  The offending line appears to be:  db01 ansible_host=172.20.4.140                  ^ here  There appears to
+be both 'k=v' shorthand syntax and YAML in this task. Only one syntax may be used.
+
+2023-05-19 14:22:00,802 p=11547 u=root n=ansible | [WARNING]:  * Failed to parse /root/Ansible/provision-stack/inventory-vpro with ini plugin: /root/Ansible/provision-
+stack/inventory-vpro:8: Expected key=value host variable assignment, got: ansible_host:
+
+2023-05-19 14:22:00,802 p=11547 u=root n=ansible | [WARNING]: Unable to parse /root/Ansible/provision-stack/inventory-vpro as an inventory source
+
+2023-05-19 14:22:00,802 p=11547 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-05-19 14:22:01,324 p=11547 u=root n=ansible | PLAY [Set host to ip mapping in /etc/hosts file of all instances in the stack] ***************************************
+2023-05-19 14:22:01,393 p=11547 u=root n=ansible | TASK [Gathering Facts] ***********************************************************************************************
+2023-05-19 14:22:03,531 p=11547 u=root n=ansible | ok: [app01]
+2023-05-19 14:22:03,539 p=11547 u=root n=ansible | ok: [mc01]
+2023-05-19 14:22:03,601 p=11547 u=root n=ansible | ok: [db01]
+2023-05-19 14:22:03,740 p=11547 u=root n=ansible | ok: [web01]
+2023-05-19 14:22:03,767 p=11547 u=root n=ansible | ok: [rmq01]
+2023-05-19 14:22:03,780 p=11547 u=root n=ansible | TASK [Import Vpc setup variable] *************************************************************************************
+2023-05-19 14:22:03,840 p=11547 u=root n=ansible | ok: [web01]
+2023-05-19 14:22:03,866 p=11547 u=root n=ansible | ok: [app01]
+2023-05-19 14:22:03,897 p=11547 u=root n=ansible | ok: [rmq01]
+2023-05-19 14:22:03,897 p=11547 u=root n=ansible | ok: [mc01]
+2023-05-19 14:22:03,909 p=11547 u=root n=ansible | ok: [db01]
+2023-05-19 14:22:03,921 p=11547 u=root n=ansible | TASK [Update hosts file for all the hosts] ***************************************************************************
+2023-05-19 14:22:04,727 p=11547 u=root n=ansible | changed: [app01]
+2023-05-19 14:22:04,731 p=11547 u=root n=ansible | changed: [web01]
+2023-05-19 14:22:04,731 p=11547 u=root n=ansible | changed: [mc01]
+2023-05-19 14:22:04,737 p=11547 u=root n=ansible | changed: [rmq01]
+2023-05-19 14:22:04,741 p=11547 u=root n=ansible | changed: [db01]
+2023-05-19 14:22:04,746 p=11547 u=root n=ansible | PLAY RECAP ***********************************************************************************************************
+2023-05-19 14:22:04,746 p=11547 u=root n=ansible | app01                      : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-19 14:22:04,747 p=11547 u=root n=ansible | db01                       : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-19 14:22:04,747 p=11547 u=root n=ansible | mc01                       : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-19 14:22:04,747 p=11547 u=root n=ansible | rmq01                      : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-19 14:22:04,747 p=11547 u=root n=ansible | web01                      : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-19 14:28:13,187 p=11705 u=root n=ansible | [WARNING]:  * Failed to parse /root/Ansible/provision-stack/inventory-vpro with yaml plugin: We were unable to read
+either as JSON nor YAML, these are the errors we got from each: JSON: No JSON object could be decoded  Syntax Error
+while loading YAML.   mapping values are not allowed in this context  The error appears to be in '/root/Ansible
+/provision-stack/inventory-vpro': line 7, column 18, but may be elsewhere in the file depending on the exact syntax
+problem.  The offending line appears to be:  db01 ansible_host=172.20.4.140                  ^ here  There appears to
+be both 'k=v' shorthand syntax and YAML in this task. Only one syntax may be used.
+
+2023-05-19 14:28:13,187 p=11705 u=root n=ansible | [WARNING]:  * Failed to parse /root/Ansible/provision-stack/inventory-vpro with ini plugin: /root/Ansible/provision-
+stack/inventory-vpro:8: Expected key=value host variable assignment, got: ansible_host:
+
+2023-05-19 14:28:13,188 p=11705 u=root n=ansible | [WARNING]: Unable to parse /root/Ansible/provision-stack/inventory-vpro as an inventory source
+
+2023-05-19 14:28:13,188 p=11705 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-05-19 14:28:13,404 p=11705 u=root n=ansible | PLAY [Set host to ip mapping in /etc/hosts file of all instances in the stack] ***************************************
+2023-05-19 14:28:13,415 p=11705 u=root n=ansible | TASK [Gathering Facts] ***********************************************************************************************
+2023-05-19 14:28:15,494 p=11705 u=root n=ansible | ok: [mc01]
+2023-05-19 14:28:15,520 p=11705 u=root n=ansible | ok: [app01]
+2023-05-19 14:28:15,536 p=11705 u=root n=ansible | ok: [db01]
+2023-05-19 14:28:15,548 p=11705 u=root n=ansible | ok: [rmq01]
+2023-05-19 14:28:15,590 p=11705 u=root n=ansible | ok: [web01]
+2023-05-19 14:28:15,600 p=11705 u=root n=ansible | TASK [Import Vpc setup variable] *************************************************************************************
+2023-05-19 14:28:15,658 p=11705 u=root n=ansible | ok: [web01]
+2023-05-19 14:28:15,682 p=11705 u=root n=ansible | ok: [app01]
+2023-05-19 14:28:15,712 p=11705 u=root n=ansible | ok: [rmq01]
+2023-05-19 14:28:15,713 p=11705 u=root n=ansible | ok: [mc01]
+2023-05-19 14:28:15,725 p=11705 u=root n=ansible | ok: [db01]
+2023-05-19 14:28:15,735 p=11705 u=root n=ansible | TASK [Update hosts file for all the hosts] ***************************************************************************
+2023-05-19 14:28:16,551 p=11705 u=root n=ansible | ok: [db01]
+2023-05-19 14:28:16,553 p=11705 u=root n=ansible | ok: [app01]
+2023-05-19 14:28:16,555 p=11705 u=root n=ansible | ok: [rmq01]
+2023-05-19 14:28:16,557 p=11705 u=root n=ansible | ok: [mc01]
+2023-05-19 14:28:16,563 p=11705 u=root n=ansible | ok: [web01]
+2023-05-19 14:28:16,569 p=11705 u=root n=ansible | PLAY RECAP ***********************************************************************************************************
+2023-05-19 14:28:16,569 p=11705 u=root n=ansible | app01                      : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-19 14:28:16,570 p=11705 u=root n=ansible | db01                       : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-19 14:28:16,570 p=11705 u=root n=ansible | mc01                       : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-19 14:28:16,570 p=11705 u=root n=ansible | rmq01                      : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-19 14:28:16,570 p=11705 u=root n=ansible | web01                      : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
