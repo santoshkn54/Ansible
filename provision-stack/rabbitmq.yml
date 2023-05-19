@@ -36,8 +36,8 @@
       command: echo 'deb http://www.rabbitmq.com/debian/ testing main' | sudo tee /etc/apt/sources.list.d/rabbitmq.list
 
     - name: adding rmq key
-      apt_key:
-        url: https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | sudo apt-key add -
+
+        get_url: https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | sudo apt-key add -
         state: present
       tags:
         - package
