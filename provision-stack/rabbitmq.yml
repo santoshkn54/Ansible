@@ -33,8 +33,9 @@
         - package
 
     - apt_repository:
-        url: https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | sudo apt-key add -
-        command: echo "deb https://dl.bintray.com/rabbitmq/debian bionic main" | sudo tee /etc/apt/sources.list.d/bintray.rabbitmq.list
+
+        command: echo 'deb http://www.rabbitmq.com/debian/ testing main' | sudo tee /etc/apt/sources.list.d/rabbitmq.list
+        command: wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | sudo apt-key add -
       tags:
         - package
 
