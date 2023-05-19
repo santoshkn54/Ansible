@@ -35,7 +35,8 @@
     - name: installing dependancies for rmq
 
       command: echo 'deb http://www.rabbitmq.com/debian/ testing main' | sudo tee /etc/apt/sources.list.d/rabbitmq.list
-      command: wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | sudo apt-key add -
+      apt_key:
+        url: https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | sudo apt-key add -
       tags:
         - package
 
