@@ -40,6 +40,9 @@
       shell: "wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | sudo apt-key add -"
       tags:
         - package
+    -name: updating
+     apt:
+       update_cache: yes
 
     - name: Install Rabbit MQ
       apt:
