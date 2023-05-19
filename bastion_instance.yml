@@ -6,7 +6,7 @@
   gather_facts: no
   tasks:
     - name: Import VPC setup Variable
-      include_vars: vars/bastion_setup
+      include_vars: vars/vpc_setup
     - name: Import VPC setup Variable
       include_vars: vars/output_vars
     - name: Create vprofil ec2 key
@@ -54,3 +54,9 @@
        group_id: "{{BastionSG_out.group_id}}"
        vpc_subnet_id: "{{pubsub1id}}"
       register: bastionHost_out
+    - name: Insert/update "BastionSGid" in vars/output_vars
+      blockinfile:
+         path: vars/output_vars
+         backup: yes
+         block: |
+           BastionSGid: {{BastionSG_out.group_id}}
