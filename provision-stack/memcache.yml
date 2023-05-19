@@ -19,10 +19,10 @@
        - svc
     - name: Enable remote login to memcache
       lineinfile:
-         path: /etc/memcached.conf
-         regexp: '^l'
-         line: '-l 0.0.0.0'
-         backup: yes
+            path: /etc/memcached.conf
+            regexp: '^-l 127.0.0.1'
+            line: '-l  0.0.0.0'
+            backup: yes
       notify:
         - Restart memcached
       tags:
