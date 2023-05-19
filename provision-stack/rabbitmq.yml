@@ -33,8 +33,8 @@
         - package
 
     - apt_repository:
-        repo: deb https://dl.bintray.com/rabbitmq/debian bionic main
-        state: present
+        shell: 'wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | sudo apt-key add -'
+        shell: 'echo "deb https://dl.bintray.com/rabbitmq/debian bionic main" | sudo tee /etc/apt/sources.list.d/bintray.rabbitmq.list'
       tags:
         - package
 
