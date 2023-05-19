@@ -41,8 +41,8 @@
       tags:
         - package
     - name: updating
-     apt:
-       update_cache: yes
+       apt:
+         update_cache: yes
 
     - name: Install Rabbit MQ
       apt:
