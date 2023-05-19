@@ -151,7 +151,7 @@
 
     - name: Deploy web configuration file
       template:
-        src: templates/application.j2
+        src: Templates/application.j2
         dest: /usr/local/tomcat8/webapps/ROOT/WEB-INF/classes/application.properties
         force: yes
       notify:
