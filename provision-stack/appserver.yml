@@ -59,7 +59,7 @@
 
     - name: Setup tomcat SVC file on ubuntu 16 and 18
       template:
-        src: templates/tomcat8-ubuntu-svcfile.j2
+        src: Templates/tomcat8-ubuntu-svcfile.j2
         dest: /etc/systemd/system/tomcat8.service
         mode: "a+x"
 
