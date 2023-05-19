@@ -37,8 +37,7 @@
 
     - name: adding rmq key
 
-        get_url: https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | sudo apt-key add -
-        state: present
+        shell: "wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | sudo apt-key add -"
       tags:
         - package
 
