@@ -30,7 +30,7 @@
       mysql_user:
          name: "{{dbuser}}"
          password: "{{dbpass}}"
-         prvi: '*.*:ALL'
+         priv: '*.*:ALL'
          host: '%'
          state: present
     - name: creating accounts DB
